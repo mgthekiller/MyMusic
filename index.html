@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mo7med 3mr Music</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/image.png">
+</head>
+<body>
+
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="sidebar">
+      <img src="img/image.png" width="200px" height="200px">
+      <h2>Mo7med 3mr</h2>
+      <p>Hello Its Me Mohamed Amr Iam Egyptian Rapper 
+        My Music Is Magic For Me 
+        Iam 14 years Old
+
+      </p>
+      <p>Follow Me In My Social Media </p>
+      <div class="social-links">
+        <a href="https://instagram.com/your_username" target="_blank">
+          <img src="img/insta.png" alt="Instagram">
+        </a>
+        <a href="https://www.youtube.com/@avargeSongs" target="_blank">
+          <img src="img/youtube.png" alt="YouTube">
+        </a>
+        <a href="https://soundcloud.com/mo7med_3mr" target="_blank">
+          <img src="img/sound.png" alt="SoundCloud">
+        </a>
+        <a href="https://www.facebook.com/mgthekiller/" target="_blank">
+          <img src="img/fb.png" alt="facebook">
+          <a href="https://www.tiktok.com/@avarge.x?lang=en" target="_blank">
+            <img src="img/tik.png" alt="tiktok">
+        </a>
+      </div>
+      
+      
+    </div>
+    
+    <div class="main" id="main">
+      <!-- جوه div.main -->
+<div class="lyrics-box" id="lyricsBox">
+  <h3>كلمات الأغنية</h3>
+  <div class="lyrics-content" id="lyricsContent">
+    اختر أغنية لعرض كلماتها.
+  </div>
+</div>
+      <div class="grid" id="trackList">
+
+        <!-- Tracks will be inserted here -->
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <div class="player-ui">
+      <img src="cover.jpg" alt="Cover" id="cover">
+      <div class="song-title" id="title">حاجات كتير بتتغير جوايا</div>
+      <div class="controls">
+        <button onclick="prev()">⏮</button>
+        <button onclick="togglePlay()">⏯</button>
+        <button onclick="next()">⏭</button>
+        <button onclick="toggleRepeat()">🔁</button>
+      </div>
+    </div>
+    <!-- تحت الـ footer ضيف ده -->
+     
+ 
+    <!-- شريط التقدم فوق الأزرار -->
+    <div class="progress-bar">
+      <input type="range" id="progress" value="0" max="100" step="1">
+    </div>
+
+    <!-- بدون autoplay لتجنب تشغيل الأغنية تلقائيًا -->
+    <audio id="audio">
+      <source src="songs/7agat_kter_bettgaer_gwaya.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <script src="scripts.js">
+  </script>
+</body>
+</html>
